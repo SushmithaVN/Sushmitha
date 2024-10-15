@@ -1,0 +1,67 @@
+
+
+/*DOM targetting*/
+
+.container p:nth-child(1){
+	color:green;
+}
+.container p:nth-child(2){
+	color:yellow;
+}
+.container p:nth-child(3){
+	color:purple;
+}
+.main p{
+	color:green;
+}
+
+
+/*Flex concepts*/
+
+.content {
+	height: 500px;
+	width:500px;
+	background-color: gray;
+	display:flex;
+	justify-content: flex-start;   /* Align items to the start */
+}
+.content {
+	height: 500px;
+	width:500px;
+	background-color: gray;
+	display:flex;
+	justify-content: flex-end;	/* Align items to the end */
+}
+.content {
+	height: 500px;
+	width:500px;
+	background-color: gray;
+	display:flex;
+	justify-content: center;	/* Center items horizontally */
+	align-items: center;	/* Center items vertically */
+}
+.item {
+	background-color: coral;
+	height: 100px;
+	width: 100px;
+	margin:10px;
+}
+
+
+/*Positioning concept: Place child element exactly at the center of the parent div*/
+
+.parent {
+	position: relative;
+	height: 500px;
+	width: 500px;
+	background-color: teal;
+}
+.child{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);	/* Moves the element back by half its own width and height */
+	background-color: peachpuff;
+	height:100px;
+	width:100px;
+}
